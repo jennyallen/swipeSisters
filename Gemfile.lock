@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/rubycas/rubycas-client
+  revision: b6692b942f69f8c088ef4fdbc14a8e9310e5271d
+  specs:
+    rubycas-client (2.3.10.rc1)
+      activesupport
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,6 +60,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.4.0)
     multi_json (1.10.1)
+    net-ldap (0.6.1)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -116,7 +124,9 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  net-ldap
   rails (= 4.1.1)
+  rubycas-client!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+#CAS Login
+gem 'net-ldap'
+gem 'rubycas-client', :git => "https://github.com/rubycas/rubycas-client"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
