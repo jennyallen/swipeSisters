@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 #CAS Login
 gem 'net-ldap'
 gem 'rubycas-client', :git => "https://github.com/rubycas/rubycas-client"
-
-
+#To resolve problems on Windows with TimeZones (for 64 version of Windows)
+gem 'tzinfo-data'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
