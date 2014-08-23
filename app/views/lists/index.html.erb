@@ -1,1 +1,36 @@
-<h1> Lists </h1>
+<h1>Card Swipe App</h1>
+<h2> Create a new List! </h2>
+
+  <%= form_for :list, url: lists_path do |f| %>
+ <p>
+   <%= f.label :sup %><br>
+   <%= f.text_field :name %>
+ </p>
+
+ <p>
+   <%= f.label :organization %><br>
+   <%= f.text_area :organization %>
+ </p>
+
+ <p>
+   <%= f.submit %>
+ </p>
+
+<% end %>
+
+<p>Lists you've created</p> 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Organization</th>
+    <th>NetID of owner</th>
+  </tr>
+ 
+  <% @lists.each do |list| %>
+    <tr>
+      <td><%= list.name %></td>
+      <td><%= list.organizations %></td>
+      <td><%= list.netIDowner %> </td>
+    </tr>
+  <% end %>
+</table>
