@@ -23,14 +23,12 @@
   <tr>
     <th>Name</th>
     <th>Organization</th>
-    <th>NetID of owner</th>
   </tr>
- 
   <% @lists.each do |list| %>
-    <tr>
-      <td><%= list.name %></td>
-      <td><%= list.organizations %></td>
-      <td><%= list.netIDowner %> </td>
-    </tr>
-  <% end %>
+  <tr>
+  <td> <%=   list.name %> </td>
+  <td> <%=   list.organization %> </td>
+  </tr>
+    <%  end %>
+
 </table>
